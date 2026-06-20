@@ -1,0 +1,29 @@
+{
+  "_comment": "Quant Terminal — run_config.json schema v1.0. Generated per backtest run.",
+  "schema_version": "1.0",
+
+  "instrument":       "NQ",
+  "data_file":        "data/processed/backtest_input.csv",
+  "trades_output":    "data/results/trades.csv",
+  "equity_output":    "data/results/equity.csv",
+
+  "starting_balance": 50000.0,
+  "num_contracts":    1,
+  "commission":       2.74,
+  "slippage_ticks":   1,
+  "eod_exit":         true,
+  "eod_exit_time":    "15:45",
+  "daily_loss_limit": 3000.0,
+
+  "date_start":       "2020-01-01",
+  "date_end":         "2024-12-31",
+  "session_filter":   "Full Session",
+
+  "profit_target_mode":  "Strategy",
+  "profit_target_value": 1000.0,
+  "stop_loss_mode":      "Strategy",
+  "stop_loss_value":     500.0,
+
+  "sizing_mode":         "Fixed",
+  "risk_per_trade_pct":  1.0
+}
